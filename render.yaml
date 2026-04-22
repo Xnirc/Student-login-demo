@@ -1,6 +1,7 @@
 services:
   - type: web
     name: student-login-api
+    plan: free
     env: node
     rootDir: server
     buildCommand: npm install
