@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: student-login-api
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb://admin:Amanyadav%40123@ac-5hpaovq-shard-00-00.dhiwzqk.mongodb.net:27017,ac-5hpaovq-shard-00-01.dhiwzqk.mongodb.net:27017,ac-5hpaovq-shard-00-02.dhiwzqk.mongodb.net:27017/student-login?ssl=true&replicaSet=atlas-lt8bq1-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Aman
+      - key: JWT_SECRET
+        value: supersecret12345678910
