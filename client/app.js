@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://student-login-demo.onrender.com/api';
 
 // Utility for showing alerts
 function showAlert(message, type = 'error') {
