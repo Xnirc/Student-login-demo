@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container glass-panel">
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <p>Register as a new student.</p>
+            <div id="alertBox" class="alert hidden"></div>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="example@email.com">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="Create a password" minlength="6">
+                </div>
+                <button type="submit" class="btn primary-btn" id="registerBtn">
+                    <span class="btn-text">Register</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </form>
+            <p class="switch-form">Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

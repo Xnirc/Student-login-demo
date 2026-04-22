@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <nav class="navbar">
+        <div class="nav-brand">Student Portal</div>
+        <button id="logoutBtn" class="btn secondary-btn">Logout</button>
+    </nav>
+    <main class="dashboard-container">
+        <div class="glass-panel profile-card">
+            <h2>Welcome, <span id="studentName">Loading...</span>!</h2>
+            <div class="profile-details">
+                <p><strong>Email:</strong> <span id="studentEmail">...</span></p>
+                <p><strong>Joined:</strong> <span id="studentJoined">...</span></p>
+            </div>
+        </div>
+
+        <div class="glass-panel students-list-container">
+            <h3>Registered Students Directory</h3>
+            <div id="tableLoader" class="loader dark-loader"></div>
+            <table id="studentsTable" class="hidden">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Joined Date</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsBody">
+                    <!-- Dynamic rows here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
